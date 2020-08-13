@@ -1,0 +1,47 @@
+<!-- 
+    Name: Bruno Surdi Oliveira
+    Date: May 2020
+    Purpose: Lab 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Adding background and other styles on body -->
+    <style>
+        body {
+            background-image: url("https://png.pngtree.com/back_origin_pic/03/75/00/77f5aa5182f397f702648f64dc340ec1.jpg");
+            color: azure;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create 3 buttons with EventHendler -->
+    <br><button type="button" class="btn btn-warning" onclick="helper()">Get Beer Data Asynchronously</button> <br><br>
+    <button type="button" class="btn btn-info" onclick="Previous()">Previous Beer</button>
+    <button type="button" class="btn btn-info" onclick="Next()">Next Beer</button> <br>
+
+    <!-- Div called beerName and other to output the image -->
+    <br>
+    <div class="alert alert-warning" role="alert" id="beerName"></div> <br>
+    <div class="alert alert-warning" role="alert">
+        <img id="beerImage" />
+    </div>
+
+    <!-- JS code -->
+    <script src="Bruno_Lab2.js">
+    </script>
+</body>
+
+</html>
